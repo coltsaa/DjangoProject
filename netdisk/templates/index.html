@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件及时分享 - 首页</title>
+</head>
+<body>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="upfile">
+    <input type="submit" value="上传">
+</form>
+</body>
+</html>
